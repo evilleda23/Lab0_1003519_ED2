@@ -49,7 +49,7 @@ namespace APIDemo
                 Singleton.Instance.ExchangeRates.Add(newValue);
                 Singleton.Instance.LastId++;
                 return Created("",newValue);
-            }
+            } 
             catch (Exception ex)
             {
                 return BadRequest(); 
